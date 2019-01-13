@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import FetchResource from 'fetch/FetchResource'
 import './styles/SignupContainer.scss'
 
 export default class SignupContainer extends Component {
@@ -13,6 +14,30 @@ export default class SignupContainer extends Component {
         const newState = this.state
         newState[field] = event.target.value
         this.setState(newState);
+    }
+
+    handleSubmit = () => {
+        const { email, username, password, confirmPassword } = this.state
+        if (email !== '' && username !== '' && password !== '' && confirmPassword !== '') {
+            const data = {
+                email: email,
+                username: username,
+                password: password
+            }
+
+            FetchResource.post(data, '/signup/create/')
+            .then(res => {
+                console.log("you did it!");
+            })
+            .catch(err => {
+                console.log("you didn't do it...");
+            })
+
+        } else {
+            console.log("empty field");
+        }
+        
+
     }
 
     render() {
@@ -45,7 +70,7 @@ export default class SignupContainer extends Component {
                             onChange={this.handleChange.bind(this, 'confirmPassword')} /> 
                     </form>
                 </div>
-                <div className="SignupButton">
+                <div className="SignupButton" onClick={this.handleSubmit}>
                     <p>Create Account</p>
                 </div>
             </div>

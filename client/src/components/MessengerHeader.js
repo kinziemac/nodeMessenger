@@ -12,32 +12,8 @@ export default class MessengerHeader extends Component {
     selectedHeading: "Home"
   };
 
-  // componentDidMount() {
-  //   window.addEventListener("scroll", this.handleColorChange.bind(this));
-  // }
-
-  // handleColorChange() {
-  //   const header = document.getElementById("LandingHeader");
-  //   const about = document.getElementById("About");
-    
-  //   //making header appear
-  //   if (window.pageYOffset > about.offsetTop - 5) {
-  //     header.style.opacity = "1";
-  //   } else {
-  //     header.style.opacity = "1";
-  //   }
-
-  // }
-
-  // handleSelectSection(section) {
-  //   this.setState({ selectedHeading: section }, () => {
-  //     this.props.onScroll(section);
-  //   });
-  // }
-
   render() {
     const { pages } = this.props
-    const windowWidth = window.innerWidth
 
     return (
       <div id="LandingHeader">

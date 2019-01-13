@@ -14,7 +14,7 @@ export default class LoginContainer extends Component {
     }
 
     render() {
-        const { email, username, password, confirmPassword } = this.state
+        const { username, password } = this.state
 
         return (
             <div id="LoginContainer">

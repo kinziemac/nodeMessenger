@@ -7,7 +7,7 @@ import * as serviceWorker from '../serviceWorker';
 import MessengerHeader from 'components/MessengerHeader'
 
 
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route} from "react-router-dom";
 
 const Users = () => <h2 style={{ margin: '20%'}}>Users</h2>;
 

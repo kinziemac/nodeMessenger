@@ -13,7 +13,15 @@ var http = require('http');
  */
 
 var port = normalizePort(process.env.PORT || '3001');
+const serverName = 'localhost:27018'; // REPLACE WITH YOUR DB SERVER
+const database = 'server';      // REPLACE WITH YOUR DB NAME
+
 console.log(`Listening on Port = ${port}`)
+process.env.MONGO = 
+  process.env.PORT ? 
+  'mongodb://mackenzie:password12@ds255794.mlab.com:55794/node-messenger' :
+  `mongodb://${serverName}/${database}`
+console.log(process.env)
 app.set('port', port);
 
 /**
