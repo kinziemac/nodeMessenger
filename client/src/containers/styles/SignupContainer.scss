@@ -1,0 +1,56 @@
+@import 'src/GlobalSCSS.scss';
+
+#SignupContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../../images/brick-landing.jpg);
+    background-size: cover;
+
+    p {
+        color: white;
+        font-size: 3em;
+        font-weight: 900;
+        font-family: $SECONDARY_FONT;
+    }
+
+    .hermesTitle {
+        @extend HermesTitle;
+    }
+
+
+    #SignupBlock {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background: white;
+        color: black;
+        border-radius: 2px;
+
+        -webkit-box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.75);
+
+        p {
+            font-size: 1.1em;
+        }
+
+        #SignupFormContainer {
+            display: flex;
+            flex-direction: column;
+
+            input {
+                width: 340px;
+            }
+        }
+    }
+
+    .SignupButton {
+        @extend HermesButton; 
+    }
+}

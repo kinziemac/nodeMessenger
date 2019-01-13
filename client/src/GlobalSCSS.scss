@@ -1,0 +1,65 @@
+// Global SCSS Classes will go here
+
+$LIGHT_BLUE: #c9daea;
+$GREEN_BLUE: #00cecb;
+$LIGHT_GRAY: rgb(236, 236, 236);
+$GRAY: #D5D5D5;
+$DARK_GRAY: #555555;
+$MAIN: #3C1CFE;
+$LIGHT_MAIN: #6249fe;
+$DARK_MAIN: #241098;
+$BLACK: #1d1d1b;
+
+$MAIN_FONT: 'Major Mono Display', monospace;
+$SECONDARY_FONT: 'Raleway', sans-serif;
+
+input {
+    font-family: $SECONDARY_FONT;
+    border: none;
+    border-color: rgb(200, 200, 200);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    font-size: 1.3em;
+    padding: 10px;
+    color: black;
+    outline: none;
+}
+
+HermesButton {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        width: 340px;
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 2px;
+        cursor: pointer;
+
+        -webkit-box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.75);
+
+    
+        p {
+            color: black;
+            font-size: 1.3em;
+            margin: 0;
+            font-weight: 400;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        &:active {
+            background:rgba(180,180,180, 1);
+        }
+}
+
+HermesTitle {
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -webkit-touch-callout: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+}

@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
+/* Global classes can go here */
+
+
 body {
   margin: 0;
   padding: 0;
@@ -6,7 +11,22 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
+
+/* input {
+  font-family: 'Raleway', sans-serif;
+  border: none;
+  border-color: rgb(200, 200, 200);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  
+  font-size: 1.3em;
+  padding: 10px;
+  color: black;
+  outline: none;
+  width: 340px;
+} */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
